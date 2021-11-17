@@ -44,11 +44,8 @@ body main section {
 }
 
 body main section .img-box {
-  height: 45px;
-  width: 45px;
   border-radius: 100%;
   margin-bottom: 20px;
-  background: var(--textColor);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +73,7 @@ body main section p {
   margin-top: 20px;
 }
 
-body main section h2 {
+body main section h2, body main section H5 {
   color: var(--secondary-color);
 }
 /*# sourceMappingURL=style.css.map */
