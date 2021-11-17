@@ -1,0 +1,57 @@
+@import "default-setup";
+
+// ---- default color ----------
+:root {
+    --primary-color: #f7f6f2;
+    --secondary-color: #A4EBF3;
+    --textColor: #212121;
+}
+
+// ------- night mood color ---------
+.dark-mood{
+    --primary-color: #212121;
+    --secondary-color: #ff865e;
+    --textColor: #f7f6f2;
+}
+
+@mixin positionCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--textColor);
+    main {
+        section {
+            @include positionCenter;
+            display: flex;
+            margin:0 auto;
+            max-width: 400px;
+            height: 100vh;
+            text-align: center;
+            .img-box {
+                height: 45px;
+                width: 45px;
+                border-radius: 100%;
+                margin-bottom: 20px;
+                background:var(--textColor);
+                @include positionCenter;
+                img {
+                    width: 30px;
+                }
+            }
+            .img-box:hover{
+                background: var(--primary-color);
+            }
+            p {
+                margin-top: 20px;
+            }
+            h2 {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
